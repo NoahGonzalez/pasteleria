@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+body{
+    background-color: #FFF5E1;
+    font-family: "Lato", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFC0CB;
+    color: #8B4513;
+    padding: 15px 40px;
+    font-family: "Pacifico";
+}
+
+
+.navbar .logo img{
+    height: 2.5rem;
+    width:auto;
+    display: block;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin:0;
+    padding: 0;
+}
+
+ul li{
+    position:relative;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #8B4513;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown{
+    display:none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFC0CB;
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+ul li a:hover{
+    background: #ffd0d8;
+    border-radius: 10%;
+}
+
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+.navbar .carro {
+    cursor: pointer;
+}
+
+
+
+/* Links usuario */
+.user-links {
+    text-align: right;
+    margin: 15px 40px;
+}
+
+.user-links a {
+    text-decoration: none;
+    color: #8B4513;
+    margin: 0 5px;
+}
+
+.user-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #FFC0CB;
+    color: #8B4513;
+    padding: 15px 40px;
+    font-family: "Pacifico";
+}
+
+.footer-left h2 {
+    margin-bottom: 15px;
+}
+
+.footer-left .logos img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
