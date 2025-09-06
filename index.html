@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -19,18 +17,25 @@
         <div class="logo">
             <img src="img/pasteleria-logo.svg" alt="">
         </div>
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Productos</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contacto</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="">
+                    <a href="#">Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Tortas</a></li>
+                        <li><a href="#">Pasteles</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
         </nav>
         <div class="carro">
             🛒 Carro (0)
         </div>
     </header>
-
 
     <main>
     <!-- Links de usuario -->
@@ -126,14 +131,12 @@
         <div class="footer-left">
             <h2>Mil Sabores</h2>
             <div class="logos">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg" alt="Amex">
+                <img src="img/cards.webp" alt="cards">
             </div>
         </div>
     </footer>
 
 
-    
+
 </body>
 </html>
