@@ -1,0 +1,24 @@
+.carrito-box {
+    background: #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.08);
+    padding: 30px 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.btn-pagar {
+    background: #8B4513;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn-pagar:hover {
+    background: #a0522d;
+}
