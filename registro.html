@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
@@ -34,6 +35,61 @@
             🛒 Carro (0)
         </div>
     </header>
+
+      <main>
+    <section class="form-container">
+      <h1>Registro de Usuario</h1>
+      <form id="formRegistro">
+
+        <!-- RUN -->
+        <label for="run">RUN (sin puntos ni guion)</label>
+        <input type="text" id="run" required minlength="7" maxlength="9" placeholder="Ej: 19011022K">
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required maxlength="50">
+
+        <!-- Apellidos -->
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" required maxlength="100">
+
+        <!-- Correo -->
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" required maxlength="100">
+
+        <!-- Contraseña -->
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" required minlength="4" maxlength="10">
+
+        <!-- Dirección -->
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" required maxlength="300">
+
+        <!-- Región y comuna -->
+        <label for="region">Región</label>
+        <select id="region" required>
+          <option value="">Seleccione una región</option>
+          <!-- opciones se llenarán con JS -->
+        </select>
+
+        <label for="comuna">Comuna</label>
+        <select id="comuna" required>
+          <option value="">Seleccione una comuna</option>
+          <!-- opciones se llenarán con JS -->
+        </select>
+
+        <!-- Fecha de nacimiento -->
+        <label for="fechaNac">Fecha de nacimiento</label>
+        <input type="date" id="fechaNac">
+
+        <!-- Botón -->
+        <button type="submit">Registrar</button>
+      </form>
+
+    </section>
+  </main>
+
+     
 
         <!-- Footer -->
     <footer>
