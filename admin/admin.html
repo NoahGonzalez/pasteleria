@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Milsabores-Admin</title>
+</head>
+<body>
+    
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="../img/pasteleria-logo.svg" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#" onclick="mostrarSeccion('productos')">Productos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('usuarios')">Usuarios</a></li>
+                <li><a href="#">Configuracion</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Hola Admin</h1>
+ 
+            <div id="productos" class="seccion">
+                <h2>Productos</h2>
+                <div id="lista-productos"></div>
+            </div>
+
+            <div id="usuarios" class="seccion" style="display:none"> 
+                <h2>Usuarios</h2>
+                <div id="lista-usuarios"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/admin.js"></script>
+
+</body>
+</html>
