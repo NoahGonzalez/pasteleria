@@ -105,7 +105,7 @@ ul li:hover ul.dropdown{
 .boton-carrito a{
     cursor: pointer;
     color: var(--clr-cafe);
-
+}
   
 .navbar .carro {
     color: #8B4513;
