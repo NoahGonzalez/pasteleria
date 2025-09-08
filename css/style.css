@@ -216,6 +216,7 @@ ul li:hover ul.dropdown{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 #carro-lista li:last-child {
     border-bottom: none;
