@@ -6,25 +6,29 @@
   <title>Nuestros Dulces</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<header class="navbar">
-        <div class="logo">
-            <img src="img/pasteleria-logo.svg" alt="">
-        </div>
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Productos</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <div class="carro">
-            🛒 Carro (0)
-        </div>
-    </header>
-
 <body>
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/pasteleria-logo.svg" alt="">
+    </div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Productos</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Blogs</a>
+      <a href="#">Contacto</a>
+    </nav>
+    <div class="carro" id="carro-btn" tabindex="0">
+      🛒 Carro (<span id="carro-cantidad">0</span>)
+      <div id="carro-dropdown" class="carro-dropdown" style="display:none;">
+        <div id="carro-lista"></div>
+        <a href="carrito.html" class="btn-pagar" style="margin-top:10px;display:block;text-align:center;">Ir a carrito</a>
+      </div>
+    </div>
+  </header>
 
   <h1>Nuestros Postres</h1>
 
@@ -33,61 +37,72 @@
       <img src="chocolate.jpg" alt="Mousse de Chocolate">
       <h2>Mousse Chocolate</h2>
       <p class="precio">$12.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
       <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
   </div>
+
     </div>
 
     <div class="card">
       <img src="frutas.jpg" alt="Tiramisú Clásico">
       <h2>Tiramisú Clásico</h2>
       <p class="precio">$15.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
       <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
   </div>
+
     </div>
 
     <div class="card">
-      <img src="vainilla.jpg" alt="Chesscake Sin Azúcar">
-      <h2>Chesscake Sin Azúcar</h2>
+      <img src="vainilla.jpg" alt="Cheesecake Sin Azúcar">
+      <h2>Cheesecake Sin Azúcar</h2>
       <p class="precio">$10.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
       <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
   </div>
+
     </div>
 
     <div class="card">
       <img src="cuadrada.jpg" alt="Empanada de Manzana">
       <h2>Empanada de Manzana</h2>
       <p class="precio">$12.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
       <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
   </div>
+
     </div>
 
     <div class="card">
       <img src="cuadrada.jpg" alt="Tarta Santiago">
       <h2>Tarta Santiago</h2>
       <p class="precio">$12.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
       <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
   </div>
+
     </div>
 
     <div class="card">
       <img src="cuadrada.jpg" alt="Brownie Sin Gluten">
       <h2>Brownie Sin Gluten</h2>
       <p class="precio">$12.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
@@ -110,6 +125,7 @@
       <img src="cuadrada.jpg" alt="Galletas Veganas de Avena">
       <h2>Galletas Veganas de Avena</h2>
       <p class="precio">$12.000</p>
+
       <button class="btn">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
       <div class="detalle-contenedor" style="display: none;">
@@ -119,6 +135,7 @@
   </div>
 
   <script src="js/productos.js"></script>
+
 
 </body>
 
