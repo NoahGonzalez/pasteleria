@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Orígenes de la Repostería</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/pasteleria-logo.svg" alt="Logo Mil Sabores">
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="#">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="carro" id="carro-btn" tabindex="0">
+      🛒 Carro (<span id="carro-cantidad">0</span>)
+      <div id="carro-dropdown" class="carro-dropdown" style="display:none;">
+        <div id="carro-lista"></div>
+        <a href="carrito.html" class="btn-pagar" style="margin-top:10px;display:block;text-align:center;">Ir a carrito</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="blog-detalle">
+    <h1 class="titulo-blog">Los primeros registros de la repostería fueron en Egipto</h1>
+    <div class="blog-contenido">
+      <img src="img/reposteria-egipto.jpg" alt="Repostería en Egipto" class="blog-imagen">
+      <div class="blog-texto">
+        <p>
+          La historia de la repostería comienza en el Antiguo Egipto, donde ya se elaboraban los primeros panes dulces y postres a base de miel,
+          dátiles, frutos secos y cereales. Estas recetas no solo eran parte de la vida cotidiana, sino que también tenían un fuerte carácter
+          ceremonial, pues eran ofrecidas a los dioses y compartidas en celebraciones importantes.
+        </p>
+        <p>
+          Con el tiempo, estas tradiciones se expandieron a través de Grecia y Roma, quienes adoptaron y perfeccionaron muchas de estas técnicas.
+          Ingredientes como la miel, las nueces y la leche comenzaron a formar parte de un sinfín de preparaciones que hoy podemos reconocer como
+          el origen de la pastelería moderna.
+        </p>
+        <p>
+          Gracias a este legado, hoy disfrutamos de una repostería diversa y rica en sabores, que mezcla tradición e innovación, conservando
+          siempre esa esencia de compartir dulzura en momentos especiales.
+        </p>
+      </div>
+    </div>
+    <a href="blogs.html" class="btn-volver">⬅ Volver a Blogs</a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <h2>Mil Sabores</h2>
+      <div class="logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg" alt="Amex">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script carrito -->
+  <script>
+    function obtenerCarrito() {
+      return JSON.parse(localStorage.getItem('carrito')) || [];
+    }
+
+    function actualizarCarroDropdown() {
+      const lista = document.getElementById('carro-lista');
+      const cantidad = document.getElementById('carro-cantidad');
+      const carrito = obtenerCarrito();
+      cantidad.textContent = carrito.reduce((acc, p) => acc + p.cantidad, 0);
+      if (carrito.length === 0) {
+        lista.innerHTML = '<p style="padding:10px;">El carrito está vacío.</p>';
+      } else {
+        lista.innerHTML = '<ul style="list-style:none;padding:0;margin:0;">' +
+          carrito.map(p => `<li style="padding:4px 0;border-bottom:1px solid #eee;">
+              ${p.nombre} x${p.cantidad} <span style="float:right;">$${(p.precio*p.cantidad).toLocaleString()}</span>
+            </li>`).join('') +
+          '</ul>';
+      }
+    }
+
+    document.getElementById('carro-btn').addEventListener('click', function(e) {
+      e.stopPropagation();
+      const dropdown = document.getElementById('carro-dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      actualizarCarroDropdown();
+    });
+
+    document.addEventListener('click', function() {
+      document.getElementById('carro-dropdown').style.display = 'none';
+    });
+
+    actualizarCarroDropdown();
+  </script>
+</body>
+</html>
