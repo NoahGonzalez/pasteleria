@@ -12,24 +12,32 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">
-      <img src="img/pasteleria-logo.svg" alt="">
-    </div>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="#">Productos</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <div class="carro" id="carro-btn" tabindex="0">
-      🛒 Carro (<span id="carro-cantidad">0</span>)
-      <div id="carro-dropdown" class="carro-dropdown" style="display:none;">
-        <div id="carro-lista"></div>
-        <a href="carrito.html" class="btn-pagar" style="margin-top:10px;display:block;text-align:center;">Ir a carrito</a>
-      </div>
-    </div>
-  </header>
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="tortas.html">Tortas</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carro" id="carro-btn" tabindex="0">
+            🛒 Carro (<span id="carro-cantidad">0</span>)
+            <div id="carro-dropdown" class="carro-dropdown" style="display:none;">
+                <div id="carro-lista"></div>
+                <a href="carrito.html" class="btn-pagar" style="margin-top:10px;display:block;text-align:center;">Ir a carrito</a>
+            </div>
+        </div>
+    </header>
 
 
   <h1>Nuestras Tortas</h1>
