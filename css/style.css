@@ -135,7 +135,102 @@ ul li:hover ul.dropdown{
 
 }
 
+.carrito-box {
+    background: #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.08);
+    padding: 30px 20px;
+    width: 80%;
+    margin: 30px auto;
+}
 
+.btn-pagar {
+    background: #8B4513;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn-pagar:hover {
+    background: #a0522d;
+}
+
+/* Botón del carrito */
+.carro, #carro-btn {
+    color: #8B4513;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: "Pacifico", cursive;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1rem;
+    user-select: none;
+    outline: none;
+    display: inline-block;
+    transition: color 0.2s;
+}
+.carro:hover, #carro-btn:hover {
+    color: #a0522d;
+    text-decoration: underline;
+}
+
+/* Dropdown del carrito */
+.carro-dropdown, #carro-dropdown {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: #fff;
+    color: #8B4513;
+    min-width: 220px;
+    border: 1px solid #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    z-index: 100;
+    padding: 10px 0 10px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+/* Estilo para la lista de productos en el dropdown */
+#carro-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#carro-lista li {
+    padding: 6px 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#carro-lista li:last-child {
+    border-bottom: none;
+}
+
+/* Botón "Ir a carrito" en el dropdown */
+.carro-dropdown .btn-pagar, #carro-dropdown .btn-pagar {
+    background: #8B4513;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: block;
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+.carro-dropdown .btn-pagar:hover, #carro-dropdown .btn-pagar:hover {
+    background: #a0522d;
+}
 
 /* Links usuario */
 .user-links {
