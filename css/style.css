@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 :root{
@@ -32,7 +33,9 @@ main {
 }
 
 body{
+
     background-color: var(--clr-fondo);
+
     font-family: "Lato", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -40,11 +43,11 @@ body{
 
 /* navbar */
 
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background: var(--clr-rosa);
     color: var(--clr-cafe);
     padding: 15px 40px;
@@ -73,6 +76,7 @@ ul li{
 
 
 ul li a{
+
     color: var(--clr-cafe);
     padding: 5px 10px;
     display: block;
@@ -101,6 +105,9 @@ ul li:hover ul.dropdown{
     display:block;
 }
 
+
+.navbar .carro {
+    cursor: pointer;
 
 .boton-carrito a{
     cursor: pointer;
@@ -146,12 +153,14 @@ ul li:hover ul.dropdown{
 .user-links a {
     text-decoration: none;
     color: var(--clr-cafe);
+
     margin: 0 5px;
 }
 
 .user-links a:hover {
     text-decoration: underline;
 }
+
 
 /* Hero */
 .hero {
@@ -460,6 +469,7 @@ figcaption {
 }
 
 
+
 /* Footer */
 footer {
     display: flex;
@@ -467,6 +477,7 @@ footer {
     align-items: flex-start;
     background: var(--clr-rosa);
     color: var(--clr-cafe);
+
     padding: 15px 40px;
     font-family: "Pacifico";
 }
