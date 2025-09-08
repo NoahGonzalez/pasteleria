@@ -254,6 +254,21 @@ ul li:hover ul.dropdown{
     margin: 30px auto;
 }
 
+.carrito-box input[type="text"],
+.carrito-box input[type="email"],
+.carrito-box input[type="tel"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: block;
+}
+
 .btn-pagar {
     background: #8B4513;
     color: #fff;
@@ -269,6 +284,181 @@ ul li:hover ul.dropdown{
 .btn-pagar:hover {
     background: #a0522d;
 }
+
+/* Nosotros */
+.nosotros {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.8;
+    color: #333;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+}
+
+.nosotros h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8B4513;
+}
+
+.entrada-nosotros p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.img-nosotros {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* BLOGS LISTA */
+.blogs-lista {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.titulo-blogs {
+  font-family: "Pacifico", cursive;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #8B4513;
+}
+
+.blog-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.blog-texto {
+  flex: 1;
+}
+
+.blog-texto h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #8B4513;
+}
+
+.blog-texto p {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.blog-img {
+  flex: 1;
+}
+
+.blog-img img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-img img {
+    max-width: 100%;
+  }
+}
+
+/* BLOG DETALLE */
+.blog-detalle {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.titulo-blog {
+  font-family: "Pacifico", cursive;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8B4513;
+}
+
+.blog-contenido {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.blog-imagen {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.blog-texto {
+  flex: 2;
+  color: #444;
+  line-height: 1.7;
+}
+
+.btn-volver {
+  display: inline-block;
+  background: #8B4513;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-volver:hover {
+  background: #A0522D;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+  .blog-imagen {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* Footer */
 footer {
