@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Envíos - Pastelería 1000 Sabores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css"> <!-- Reutilizamos el mismo CSS -->
 </head>
-<body>
+
+<header class="navbar">
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
+        </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Productos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div class="carro">
+            🛒 Carro (0)
+        </div>
+    </header>
     
+<body>
+    <section class="contacto">
+        <h1>Envíos</h1>
+        <p class="subtitulo">Consulta información sobre nuestros envíos y realiza tu pedido con total confianza.</p>
+        
+        <div class="contenedor">
+            <!-- Información de envíos -->
+            <div class="info-contacto">
+                <h2>Detalles de Envío</h2>
+                <p><strong>📍 Cobertura:</strong> Enviamos a toda la ciudad y alrededores.</p>
+                <p><strong>⏱ Horarios:</strong> Lunes a Sábado, 09:00 a 20:00 hrs.</p>
+                <p><strong>💰 Costo:</strong> Envío gratis en compras sobre $30,000</p>
+                <p><strong>🏬 Retiro en tienda:</strong> Disponible sin costo adicional.</p>
+            </div>
+
+            <!-- Formulario para solicitud de envío -->
+            <div class="formulario">
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Dirección de envío" required>
+                    <input type="text" placeholder="Teléfono de contacto" required>
+                    <textarea placeholder="Detalles del pedido" rows="5" required></textarea>
+                    <button type="submit">Solicitar Envío</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

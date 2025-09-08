@@ -1,104 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
 
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Dulces</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="catalogo.css">
 </head>
-<body>
-    <div class="wrapper">
-            <!-- header -->
-        <header class="navbar">
-            <div class="logo">
-                <img src="img/pasteleria-logo.svg" alt="">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="">
-                        <a href="#">Productos</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Tortas</a></li>
-                            <li><a href="#">Pasteles</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Blogs</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="boton-carrito">
-            <a href="carrito.html">🛒 Carrito</a> 
-            <span class="numerito">0</span>
+  
+<header class="navbar">
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
         </div>
-        </header>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Productos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div class="carro">
+            🛒 Carro (0)
+        </div>
+    </header>
+
+<body>
 
 
-        <!-- tortas main -->
-        
-        <main>
-            <h2 class="titulo-principal">Tortas</h2>
-            <div class="contenedor-productos">
-                <div class="producto">
-                    <img class="producto-imagen" src="img/tortas/01.webp" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Torta 01</h3>
-                        <p class="producto-precio">¢1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor-tortas">
-                <div class="producto">
-                    <img class="producto-imagen" src="img/tortas/02.webp" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Torta 02</h3>
-                        <p class="producto-precio">¢1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor-tortas">
-                <div class="producto">
-                    <img class="producto-imagen" src="img/tortas/03.webp" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Torta 03</h3>
-                        <p class="producto-precio">¢1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor-tortas">
-                <div class="producto">
-                    <img class="producto-imagen" src="img/tortas/04.webp" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Torta 04</h3>
-                        <p class="producto-precio">¢1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="contenedor-tortas">
-                <div class="producto">
-                    <img class="producto-imagen" src="img/tortas/05.webp" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Torta 05</h3>
-                        <p class="producto-precio">¢1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
+  <h1>Nuestras Tortas</h1>
 
-            
-        </main> 
-
+  <div class="productos">
+    <div class="card">
+      <img src="chocolate.jpg" alt="Torta de Chocolate">
+      <h2>Torta Cuadrada Chocolate</h2>
+      <p class="precio">$45.000</p>
+      <button class="btn">Agregar</button>
     </div>
-        
+
+    <div class="card">
+      <img src="frutas.jpg" alt="Torta de Frutas">
+      <h2>Torta Cuadrada Frutas</h2>
+      <p class="precio">$50.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="vainilla.jpg" alt="Torta Vainilla">
+      <h2>Torta Circular Vainilla</h2>
+      <p class="precio">$40.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
+      <h2>Torta Circular Manjar</h2>
+      <p class="precio">$42.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
+      <h2>Torta Sin Azucar Naranja</h2>
+      <p class="precio">$48.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
+      <h2>Torta Vegana Chocolate</h2>
+      <p class="precio">$50.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
+      <h2>Torta Especial Cumpleaños</h2>
+      <p class="precio">$55.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+
+
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
+      <h2>Torta Circular Fresas</h2>
+      <p class="precio">$45.000</p>
+      <button class="btn">Agregar</button>
+    </div>
+  </div>
+
 </body>
 </html>

@@ -1,164 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tienda Online</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
-
-    
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-    <div class="wrapper">
-            <!-- header -->
-        <header class="navbar">
-            <div class="logo">
-                <img src="img/pasteleria-logo.svg" alt="">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="">
-                        <a href="#">Productos</a>
-                        <ul class="dropdown">
-                            <li><a href="tortas.html">Tortas</a></li>
-                            <li><a href="#">Pasteles</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Blogs</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="boton-carrito">
-            <a href="carrito.html">🛒 Carrito</a> 
-            <span class="numerito">0</span>
+     <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
         </div>
-        </header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="#">Productos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <a href="carrito.html" class="carro">
+            🛒 Carro (0)
+        </a>
+    </header>
 
-
-        <!-- tortas main -->
-        
-        <main>
-            <h2 class="titulo-principal">Carrito</h2>
-            <div class="contenedor-carrito">
-                <p class="carrito-vacio">Tu carrito está vacío</p>
-                <div class="carrito-productos">
-                    
-                    <div class="carrito-producto">
-                        <img src="./img/tortas/01.webp" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Torta  01</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$1000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">Eliminar</button>
-                    </div>
-
-                    
-                    <div class="carrito-producto">
-                        <img src="./img/tortas/02.webp" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Torta  02</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$1000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">Eliminar</button>
-                    </div>
-
-                    
-                    <div class="carrito-producto">
-                        <img src="./img/tortas/03.webp" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Torta  03</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$1000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">Eliminar</button>
-                    </div>
-
-                    
-                    <div class="carrito-producto">
-                        <img src="./img/tortas/04.webp" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Torta  04</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$1000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">Eliminar</button>
-                    </div>
-
-
-                    <div class="carrito-acciones">
-                        <div class="carrito-acciones-izquierda">
-                            <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
-                        </div>
-                        <div class="carrito-acciones-derecha">
-                            <div class="carrito-acciones-total">
-                                <p>Total:</p>
-                                <p id="total">$3000</p>
-                            </div>
-                            <button class="carrito-acciones-comprar">Comprar Ahora</button>
-                        </div>
-                    </div>
-
-                    
-                </div>
+    <main>
+        <h1>Carrito de Compras</h1>
+        <div class="carrito-box">
+            <div id="carrito-contenido"></div>
+            <div id="carrito-resumen"></div>
+            <div style="text-align: right; margin-top: 20px;">
+                <a href="pago.html" class="btn-pagar">Ir a pagar</a>
             </div>
-            
-        </main> 
+        </div>
+    </main>
 
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <h2>Mil Sabores</h2>
+            <div class="logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg" alt="Amex">
+            </div>
+        </div>
+    </footer>
 
-    
+    <script src="js/carrito.js"></script>
 </body>
 </html>

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 :root{
@@ -38,7 +37,10 @@ body{
 }
 
 
+
 /* navbar */
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -89,6 +91,7 @@ ul li a{
     z-index: 100;
 }
 
+
 ul li a:hover{
     background: var(--clr-rosa-light);
     border-radius: 10%;
@@ -102,6 +105,34 @@ ul li:hover ul.dropdown{
 .boton-carrito a{
     cursor: pointer;
     color: var(--clr-cafe);
+
+  
+.navbar .carro {
+    color: #8B4513;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: "Pacifico";
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .carro:hover {
+    text-decoration: underline;
+}
+
+.carro-dropdown {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: #fff;
+    color: #8B4513;
+    min-width: 220px;
+    border: 1px solid #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    z-index: 100;
+    padding: 10px 0 10px 0;
+
 }
 
 
@@ -182,7 +213,6 @@ ul li:hover ul.dropdown{
     gap: 20px;
     width: 90%;
     margin: 0 auto 50px;
-    
 }
 
 .card {
@@ -192,7 +222,6 @@ ul li:hover ul.dropdown{
     text-align: center;
     background: var(--clr-rosa);
     box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
-    
 }
 .card:hover{
     transform: scale(1.03);
@@ -213,6 +242,32 @@ ul li:hover ul.dropdown{
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
+}
+
+/* Carrito */
+.carrito-box {
+    background: #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.08);
+    padding: 30px 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.btn-pagar {
+    background: #8B4513;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn-pagar:hover {
+    background: #a0522d;
 }
 
 /* Footer */
@@ -245,26 +300,3 @@ footer {
   font-style: normal;
 }
 
-
-
-
-/*tortas*/
-main{
-    margin:1rem;
-    padding:2rem;
-}
-
-.titulo-principal{
-    color:var(--clr-cafe)
-}
-
-.contenedor-productos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-
-}
-
-.producto-imagen{
-    max-width: 50%;
-}
