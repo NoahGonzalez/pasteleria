@@ -1,0 +1,46 @@
+.form-container {
+  background: #FFC0CB;
+  width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  color: #8B4513;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Pacifico", cursive;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background: #8B4513;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  transform: scale(1.03);
+  transition: all 200ms ease;
+}
