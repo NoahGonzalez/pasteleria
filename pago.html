@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Pagar pedido</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,35 +32,34 @@
         </div>
     </header>
 
-    <main class="nosotros">
-        <h1>El dulce sueño hecho realidad</h1>
-        <article class="entrada-nosotros">
-        <p>
-            Dicen que los sueños se construyen con esfuerzo, amor y perseverancia… y así nació nuestra pastelería.
-            Todo comenzó con el anhelo de una madre que, entre recetas familiares y largas horas de dedicación, soñaba
-            con tener su propio espacio donde compartir el sabor de la repostería con el mundo.
-        </p>
-        <p>
-            Tras años de trabajo, sacrificio y pasión, ese sueño se convirtió en realidad: una pastelería que combina lo
-            mejor de las <strong>tortas y postres tradicionales</strong> con propuestas modernas e internacionales que sorprenden
-            a cada bocado.
-        </p>
-        <p>
-            Uno de nuestros grandes orgullos es el <strong>brownie sin gluten</strong>: rico, denso y lleno de sabor. Creado especialmente
-            para quienes necesitan evitar el gluten, pero no quieren renunciar al placer de un buen postre. Un verdadero
-            ejemplo de que la repostería puede ser inclusiva y deliciosa al mismo tiempo.
-        </p>
-        <p>
-            Nuestra misión es endulzar momentos especiales, acompañar celebraciones y llevar alegría en cada porción.
-            Porque en cada torta y en cada postre, no solo hay ingredientes, sino también la historia de un sueño que se
-            hizo realidad.
-        </p>
-        <figure>
-            <img src="img/brownie.jpg" alt="Brownie sin gluten" class="img-blog">
-            <figcaption>Brownie sin gluten: nuestro favorito de la casa</figcaption>
-        </figure>
-    </article>
-
+    <main>
+        <h1>Finalizar compra</h1>
+        <div class="carrito-box">
+            <form id="form-pago">
+                <h2>Datos del cliente</h2>
+                <label>Nombre completo:<br>
+                    <input type="text" name="nombre" required>
+                </label>
+                <label>Email:<br>
+                    <input type="email" name="email" required>
+                </label>
+                <label>Dirección:<br>
+                    <input type="text" name="direccion" required>
+                </label>
+                <label>Teléfono:<br>
+                    <input type="tel" name="telefono" required>
+                </label>
+                <h2>Método de pago</h2>
+                <label>
+                    <input type="radio" name="metodo" value="tarjeta" required> Tarjeta de crédito/débito
+                </label>
+                <label>
+                    <input type="radio" name="metodo" value="efectivo" required> Pago en efectivo
+                </label>
+                <button type="submit" class="btn-pagar" style="margin-top:20px;">Confirmar pedido</button>
+            </form>
+            <div id="resumen-pedido" style="margin-top:30px;"></div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -76,6 +75,7 @@
     </footer>
 
     <script>
+    // Carrito dropdown y contador
     function obtenerCarrito() {
         return JSON.parse(localStorage.getItem('carrito')) || [];
     }
@@ -103,11 +103,43 @@
         actualizarCarroDropdown();
     });
 
-    // Cierra el dropdown si haces click fuera
     document.addEventListener('click', function() {
         document.getElementById('carro-dropdown').style.display = 'none';
     });
 
-    // Actualiza el contador al cargar
     actualizarCarroDropdown();
+
+    // Mostrar resumen del carrito en la página de pago
+    function mostrarResumenPedido() {
+        const resumen = document.getElementById('resumen-pedido');
+        let carrito = obtenerCarrito();
+        if (carrito.length === 0) {
+            resumen.innerHTML = '<p>No hay productos en el carrito.</p>';
+            return;
+        }
+        let html = '<h2>Resumen del pedido</h2><table style="width:100%;border-collapse:collapse;"><tr><th>Producto</th><th>Cantidad</th><th>Subtotal</th></tr>';
+        let total = 0;
+        carrito.forEach(p => {
+            let subtotal = p.precio * p.cantidad;
+            total += subtotal;
+            html += `<tr>
+                <td>${p.nombre}</td>
+                <td>${p.cantidad}</td>
+                <td>$${subtotal.toLocaleString()}</td>
+            </tr>`;
+        });
+        html += `</table><h3>Total: $${total.toLocaleString()}</h3>`;
+        resumen.innerHTML = html;
+    }
+    mostrarResumenPedido();
+
+    // Procesar el formulario
+    document.getElementById('form-pago').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Pedido confirmado! Gracias por tu compra.');
+        localStorage.removeItem('carrito');
+        window.location.href = 'index.html';
+    });
     </script>
+</body>
+</html>

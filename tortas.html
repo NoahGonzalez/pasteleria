@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Tortas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/pasteleria-logo.svg" alt="">
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="#">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="carro" id="carro-btn" tabindex="0">
+      🛒 Carro (<span id="carro-cantidad">0</span>)
+      <div id="carro-dropdown" class="carro-dropdown" style="display:none;">
+        <div id="carro-lista"></div>
+        <a href="carrito.html" class="btn-pagar" style="margin-top:10px;display:block;text-align:center;">Ir a carrito</a>
+      </div>
+    </div>
+  </header>
+
+
+  <h1>Nuestras Tortas</h1>
+
+  <div class="productos">
+    <div class="card">
+      <img src="chocolate.jpg" alt="Torta de Chocolate">
+      <h2>Torta Cuadrada Chocolate</h2>
+      <p class="precio">$45.000</p>
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p>Deliciosa torta de chocolate con capas de ganache y un toque
+      de avellanas. Personalizable con mensajes especiales</p>
+  </div>
+
+    </div>
+    <div class="card">
+      <img src="frutas.jpg" alt="Torta de Frutas">
+      <h2>Torta Cuadrada Frutas</h2>
+      <p class="precio">$50.000</p>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p> Una mezcla de frutas frescas y crema chantilly sobre un suave
+      bizcocho de vainilla, ideal para celebraciones</p>
+  </div>
+
+    </div>
+    <div class="card">
+      <img src="vainilla.jpg" alt="Torta Vainilla">
+      <h2>Torta Circular Vainilla</h2>
+      <p class="precio">$40.000</p>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p>Bizcocho de vainilla clásico relleno con crema pastelera y cubierto
+      con un glaseado dulce, perfecto para cualquier ocasión</p>
+  </div>
+
+    </div>
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Circular Manjar">
+      <h2>Torta Circular Manjar</h2>
+      <p class="precio">$42.000</p>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p>Torta tradicional chilena con manjar y nueces, un deleite para los
+      amantes de los sabores dulces y clásicos</p>
+  </div>
+
+    </div>
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Sin Azucar Naranja">
+      <h2>Torta Sin Azucar Naranja</h2>
+      <p class="precio">$48.000</p>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p> Torta ligera y deliciosa, endulzada naturalmente, ideal para
+      quienes buscan opciones más saludables</p>
+  </div>
+
+    </div>
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Vegana Chocolate">
+      <h2>Torta Vegana Chocolate</h2>
+      <p class="precio">$50.000</p>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p>Torta de chocolate húmeda y deliciosa, hecha sin productos de
+      origen animal, perfecta para veganos</p>
+  </div>
+
+    </div>
+    <div class="card">
+      <img src="cuadrada.jpg" alt="Torta Especial Cumpleaños">
+      <h2>Torta Especial Cumpleaños</h2>
+      <p class="precio">$55.000</p>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p>Diseñada especialmente para celebraciones, personalizable
+      con decoraciones y mensajes únicos</p>
+  </div>
+
+    </div>
+    <div class="card">
+<<<<<<< HEAD
+      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
+      <h2>Torta Torta Especial Boda</h2>
+      <p class="precio">$60.000</p>
+=======
+      <img src="cuadrada.jpg" alt="Torta Circular Fresas">
+      <h2>Torta Circular Fresas</h2>
+      <p class="precio">$45.000</p>
+
+>>>>>>> 959f5a72697e9ae83bed529b822e1e272afe7f80
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <p> Elegante y deliciosa, esta torta está diseñada para ser el centro de
+      atención en cualquier boda</p>
+  </div>
+    </div>
+  </div>
+  <script src="js/productos.js"></script>
+
+
+
 </body>
+
 </html>
