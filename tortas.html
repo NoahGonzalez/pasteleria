@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/catalogo.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   <header class="navbar">
@@ -38,72 +39,102 @@
       <img src="chocolate.jpg" alt="Torta de Chocolate">
       <h2>Torta Cuadrada Chocolate</h2>
       <p class="precio">$45.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Cuadrada Chocolate',45000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="frutas.jpg" alt="Torta de Frutas">
       <h2>Torta Cuadrada Frutas</h2>
       <p class="precio">$50.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Cuadrada Frutas',50000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="vainilla.jpg" alt="Torta Vainilla">
       <h2>Torta Circular Vainilla</h2>
       <p class="precio">$40.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Circular Vainilla',40000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="cuadrada.jpg" alt="Torta Circular Manjar">
       <h2>Torta Circular Manjar</h2>
       <p class="precio">$42.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Circular Manjar',42000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="cuadrada.jpg" alt="Torta Sin Azucar Naranja">
       <h2>Torta Sin Azucar Naranja</h2>
       <p class="precio">$48.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Sin Azucar Naranja',48000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="cuadrada.jpg" alt="Torta Vegana Chocolate">
       <h2>Torta Vegana Chocolate</h2>
       <p class="precio">$50.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Vegana Chocolate',50000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="cuadrada.jpg" alt="Torta Especial Cumpleaños">
       <h2>Torta Especial Cumpleaños</h2>
       <p class="precio">$55.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Especial Cumpleaños',55000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
+
     </div>
     <div class="card">
       <img src="cuadrada.jpg" alt="Torta Circular Fresas">
       <h2>Torta Circular Fresas</h2>
       <p class="precio">$45.000</p>
-      <button class="btn" onclick="agregarAlCarrito('Torta Circular Fresas',45000)">Agregar</button>
+
+      <button class="btn">Agregar</button>
+      <button class="btn detalle-btn">Detalle</button>
+      <div class="detalle-contenedor" style="display: none;">
+      <textarea placeholder="Escribe la descripción del producto aquí..."></textarea>
+  </div>
     </div>
   </div>
+  <script src="js/productos.js"></script>
 
-  <script src="js/carrito.js"></script>
-  <script>
-    document.getElementById('carro-btn').addEventListener('click', function(e) {
-      e.stopPropagation();
-      const dropdown = document.getElementById('carro-dropdown');
-      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-      if (typeof actualizarCarroDropdown === 'function') {
-        actualizarCarroDropdown();
-      }
-    });
 
-    // Cierra el dropdown si haces click fuera
-    document.addEventListener('click', function() {
-      document.getElementById('carro-dropdown').style.display = 'none';
-    });
 
-    // Actualiza el contador al cargar
-    if (typeof actualizarCarroDropdown === 'function') {
-      actualizarCarroDropdown();
-    }
-  </script>
 </body>
+
 </html>
