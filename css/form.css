@@ -1,0 +1,134 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFC0CB;
+    color: #8B4513;
+    padding: 15px 40px;
+    font-family: "Pacifico";
+}
+/*
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+*/
+
+.navbar .logo img{
+    height: 2.5rem;
+    width:auto;
+    display: block;
+}
+
+.navbar .menu a {
+    margin: 0 10px;
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar .carro {
+    cursor: pointer;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFF5E1;
+    color: #B0BEC5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'lato', cursive;
+    color: #5D4037;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #B0BEC5;
+    margin-bottom: 30px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Información de contacto */
+.info-contacto {
+    background-color:#FFC0CB;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    color: #5D4037;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-contacto h2 {
+    margin-bottom: 15px;
+    
+}
+
+/* Formulario */
+.formulario {
+    background-color: #FFC0CB;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.formulario input,
+.formulario textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5D4037;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.formulario button {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 143px;
+  background-color:#7d625a ;
+  color: rgb(255, 254, 254);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+ 
+}
+
+.formulario button:hover {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    background-color: #5f463ed4;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transform: scale(1.03)
+    
+}
+
+.marca {
+    font-family: 'Lato', cursive;
+    text-align: center;
+    color: #5D4037;
+    margin-top: 30px;
+}
