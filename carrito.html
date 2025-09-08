@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+     <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
+        </div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="#">Productos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <a href="carrito.html" class="carro">
+            🛒 Carro (0)
+        </a>
+    </header>
+
+    <main>
+        <h1>Carrito de Compras</h1>
+        <div class="carrito-box">
+            <div id="carrito-contenido"></div>
+            <div id="carrito-resumen"></div>
+            <div style="text-align: right; margin-top: 20px;">
+                <a href="pago.html" class="btn-pagar">Ir a pagar</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <h2>Mil Sabores</h2>
+            <div class="logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg" alt="Amex">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
 </body>
 </html>

@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 html, body {
@@ -20,7 +19,6 @@ body{
     background-color: #FFF5E1;
     font-family: "Lato", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 
 /* Barra de navegación */
 .navbar {
@@ -56,7 +54,30 @@ body{
 }
 
 .navbar .carro {
+    color: #8B4513;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: "Pacifico";
     cursor: pointer;
+    position: relative;
+}
+
+.navbar .carro:hover {
+    text-decoration: underline;
+}
+
+.carro-dropdown {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: #fff;
+    color: #8B4513;
+    min-width: 220px;
+    border: 1px solid #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    z-index: 100;
+    padding: 10px 0 10px 0;
 }
 
 /* Links usuario */
@@ -129,7 +150,6 @@ body{
     gap: 20px;
     width: 90%;
     margin: 0 auto 50px;
-    
 }
 
 .card {
@@ -139,7 +159,6 @@ body{
     text-align: center;
     background: #FFC0CB;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
-    
 }
 .card:hover{
     transform: scale(1.03);
@@ -160,6 +179,32 @@ body{
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
+}
+
+/* Carrito */
+.carrito-box {
+    background: #FFC0CB;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.08);
+    padding: 30px 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.btn-pagar {
+    background: #8B4513;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn-pagar:hover {
+    background: #a0522d;
 }
 
 /* Footer */
@@ -191,5 +236,3 @@ footer {
   font-weight: 100;
   font-style: normal;
 }
-
-
