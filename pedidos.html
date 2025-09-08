@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pedidos - Pastelería mil Sabores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
 </head>
+<header class="navbar">
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
+        </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Productos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div class="carro">
+            🛒 Carro (0)
+        </div>
+    </header>
 <body>
-    
+    <section class="contacto">
+        <h1>Pedidos</h1>
+        <p class="subtitulo">Realiza tu pedido personalizado de manera rápida y sencilla!</p>
+        
+        <div class="contenedor">
+
+            <div class="info-contacto">
+                <h2>Detalles de Pedido</h2>
+                <p><strong>🍰 Productos:</strong> Tortas, pasteles, postres individuales.</p>
+                <p><strong>📦 Tiempo de preparación:</strong> 24-48 horas según el producto.</p>
+                <p><strong>⏱ Horarios de entrega:</strong> Lunes a Sábado, 09:00 a 20:00 hrs.</p>
+                <p><strong>💰 Pago:</strong> Online .</p>
+            </div>
+
+            <div class="formulario">
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="text" placeholder="Teléfono" required>
+                    <textarea placeholder="Especifica tu pedido (producto, cantidad, detalles)" rows="3" required></textarea>
+                    <button type="submit">Realizar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
