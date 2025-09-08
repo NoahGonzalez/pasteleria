@@ -1,0 +1,177 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFC0CB;
+    color: #8B4513;
+    padding: 15px 40px;
+    font-family: "Pacifico";
+}
+/*
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+*/
+
+.navbar .logo img{
+    height: 2.5rem;
+    width:auto;
+    display: block;
+}
+
+.navbar .menu a {
+    margin: 0 10px;
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar .carro {
+    cursor: pointer;
+}
+
+
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+body {
+  font-family: "lato", sans-serif;
+  background-color: #FFF5E1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  color: #8B4513;
+  margin: 30px 0;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.03); 
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+  color: #8B4513;
+}
+.card h3 {
+  font-family: "lato", sans-serif;
+  font-size: 0.8rem;
+  margin: 10px 20px;
+  color: #A0522D;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #8B4513;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #e18787;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #FFC0CB;
+}
+
+
+
