@@ -39,6 +39,10 @@ function modificarCantidad(nombre, cantidad) {
     }
 }
 
+function obtenerUsuarioLogueado() {
+    return JSON.parse(localStorage.getItem('usuarioLogueado')) || null;
+}
+
 // Para el dropdown del carrito en todas las páginas
 function actualizarCarroDropdown() {
     const lista = document.getElementById('carro-lista');
@@ -89,9 +93,32 @@ function mostrarCarrito() {
             </td>
         </tr>`;
     });
+
+    // Aplicar descuentos si corresponde
+    let usuario = obtenerUsuarioLogueado();
+    let descuento = 0;
+    let mensajeBeneficio = "";
+    if (usuario && usuario.beneficios) {
+        if (usuario.beneficios.descuento) {
+            descuento = usuario.beneficios.descuento;
+            mensajeBeneficio = descuento === 0.5 ? "¡Tienes 50% de descuento por ser mayor de 50 años!" : "¡Tienes 10% de descuento por código FELICES50!";
+        }
+    }
+    let totalConDescuento = total;
+    if (descuento > 0) {
+        totalConDescuento = total * (1 - descuento);
+        html += `<tr>
+            <td colspan="3" style="text-align:right;font-weight:bold;color:#8B4513;">Descuento:</td>
+            <td colspan="2" style="color:#8B4513;">-${(descuento*100).toFixed(0)}%</td>
+        </tr>`;
+    }
+
     html += '</table>';
     contenedor.innerHTML = html;
-    resumen.innerHTML = `<h3>Total: $${total.toLocaleString()}</h3>`;
+    resumen.innerHTML = `<h3>Total: $${totalConDescuento.toLocaleString()}</h3>
+        ${mensajeBeneficio ? `<p style="color:#8B4513;">${mensajeBeneficio}</p>` : ""}
+        ${usuario && usuario.beneficios && usuario.beneficios.tortaGratisCumple ? `<p style="color:#8B4513;">¡El día de tu cumpleaños tienes una torta gratis!</p>` : ""}
+    `;
 }
 
 // Inicialización automática

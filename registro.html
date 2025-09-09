@@ -34,7 +34,7 @@
             </ul>
         </nav>
         <div class="carro">
-            🛒 Carro (0)
+            🛒 Carro 0
         </div>
     </header>
 
@@ -80,7 +80,11 @@
 
         <!-- Fecha de nacimiento -->
         <label for="fechaNac">Fecha de nacimiento</label>
-        <input type="date" id="fechaNac">
+        <input type="date" id="fechaNac" required>
+
+        <!-- codigo -->
+        <label for="codigo">Codigo Descuento (Opcional)</label>
+        <input type="text" id="codigo" maxlength="10">
 
         <!-- Botón -->
         <button type="submit">Registrar</button>
