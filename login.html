@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilSabores - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    <!-- header -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/pasteleria-logo.svg" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="">
+                    <a href="">Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="tortas.html">Tortas</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="carro" id="carro-btn" tabindex="0">
+            🛒 Carro <span id="carro-cantidad">0</span>
+            <div id="carro-dropdown" class="carro-dropdown" style="display:none;">
+                <div id="carro-lista"></div>
+                <a href="carrito.html" class="btn-pagar" style="margin-top:10px;display:block;text-align:center;">Ir a carrito</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="form-container">
+            <h1>Iniciar Sesión</h1>
+            <form id="formLogin">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" required maxlength="100">
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required minlength="4" maxlength="10">
+
+                <button type="submit">Ingresar</button>
+                <p id="login-error" style="color: red; text-align:center; display:none;">Correo o contraseña incorrectos</p>
+            </form>
+        </section>
+    </main>
+  
+        <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <h2>Mil Sabores</h2>
+            <div class="logos">
+                <img src="img/cards.webp" alt="cards">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/login.js"></script>
+
+    <!-- Modal de éxito -->
+    <div id="login-success-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:999;justify-content:center;align-items:center;">
+      <div style="background:#fff;padding:30px 40px;border-radius:10px;box-shadow:0 2px 10px #0002;text-align:center;">
+        <h2 style="color:#8B4513;">¡Inicio de sesión exitoso!</h2>
+        <p>Bienvenido a Mil Sabores.</p>
+      </div>
+    </div>
+</body>
+</html>
