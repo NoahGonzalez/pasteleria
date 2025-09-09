@@ -39,12 +39,13 @@
         </div>
     </header>
 
+    <main>
 
-  <h1>Nuestras Tortas</h1>
+      <h1>Nuestras Tortas</h1>
 
   <div class="productos">
     <div class="card">
-      <img src="chocolate.jpg" alt="Torta de Chocolate">
+      <img src="img/tortas/torta-chocolate.webp" alt="Torta de Chocolate">
       <h2>Torta Cuadrada Chocolate</h2>
       <p class="precio">$45.000</p>
       <button class="btn" onclick="agregarAlCarrito('Torta Cuadrada Chocolate', 45000)">Agregar</button>
@@ -56,7 +57,7 @@
 
     </div>
     <div class="card">
-      <img src="frutas.jpg" alt="Torta de Frutas">
+      <img src="img/tortas/fruta-tortawebp.webp" alt="Torta de Frutas">
       <h2>Torta Cuadrada Frutas</h2>
       <p class="precio">$50.000</p>
 
@@ -69,7 +70,7 @@
 
     </div>
     <div class="card">
-      <img src="vainilla.jpg" alt="Torta Vainilla">
+      <img src="img/tortas/vainilla-circular.webp" alt="Torta Vainilla">
       <h2>Torta Circular Vainilla</h2>
       <p class="precio">$40.000</p>
 
@@ -82,7 +83,7 @@
 
     </div>
     <div class="card">
-      <img src="cuadrada.jpg" alt="Torta Circular Manjar">
+      <img src="img/tortas/manjar-redondawebp.webp" alt="Torta Circular Manjar">
       <h2>Torta Circular Manjar</h2>
       <p class="precio">$42.000</p>
 
@@ -95,7 +96,7 @@
 
     </div>
     <div class="card">
-      <img src="cuadrada.jpg" alt="Torta Sin Azucar Naranja">
+      <img src="img/tortas/naranja-torta.webp" alt="Torta Sin Azucar Naranja">
       <h2>Torta Sin Azucar Naranja</h2>
       <p class="precio">$48.000</p>
 
@@ -108,7 +109,7 @@
 
     </div>
     <div class="card">
-      <img src="cuadrada.jpg" alt="Torta Vegana Chocolate">
+      <img src="img/tortas/chocolate-vegan.webp" alt="Torta Vegana Chocolate">
       <h2>Torta Vegana Chocolate</h2>
       <p class="precio">$50.000</p>
 
@@ -121,7 +122,7 @@
 
     </div>
     <div class="card">
-      <img src="cuadrada.jpg" alt="Torta Especial Cumpleaños">
+      <img src="img/tortas/cumpleanos-torta.webp" alt="Torta Especial Cumpleaños">
       <h2>Torta Especial Cumpleaños</h2>
       <p class="precio">$55.000</p>
 
@@ -134,8 +135,8 @@
 
     </div>
     <div class="card">
-      <img src="cuadrada.jpg" alt="Torta Cuadrada de Chocolate">
-      <h2>Torta Torta Especial Boda</h2>
+      <img src="img/tortas/boda-torta.webp" alt="Torta Especial de Boda">
+      <h2>Torta Especial Boda</h2>
       <p class="precio">$60.000</p>
       <button class="btn" onclick="agregarAlCarrito('Torta Especial Boda', 60000)">Agregar</button>
       <button class="btn detalle-btn">Detalle</button>
@@ -145,6 +146,22 @@
   </div>
     </div>
   </div>
+
+
+    </main>
+  
+
+      <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <h2>Mil Sabores</h2>
+            <div class="logos">
+                <img src="img/cards.webp" alt="cards">
+            </div>
+        </div>
+    </footer>
+
+
   <script src="js/carrito.js"></script>
   <script src="js/productos.js"></script>
   <script>
@@ -162,6 +179,7 @@ document.addEventListener('click', function() {
     document.getElementById('carro-dropdown').style.display = 'none';
 });
 </script>
+
 
 
 
